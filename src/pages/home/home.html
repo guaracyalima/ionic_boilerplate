@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg card-background-page">
+
+  <ion-card>
+    <ion-card-header>
+      BFidelity
+    </ion-card-header>
+    <ion-card-content>
+      990pts
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/fuscao.jpg" />
+    <div class="card-title">Fusca Turbo German Look</div>
+    <div class="card-subtitle">1961</div>
+  </ion-card>
+</ion-content>
